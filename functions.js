@@ -23,26 +23,26 @@
 
 
 
-// // Define an arrow function to add two numbers
-// const addNumbers = () => {
-//     // Use let instead of var for block-scoped variables
-//     let a = 90; // First number
-//     let b = 78; // Second number
-//     const sum = a * b; // Calculate sum
-//     console.log(sum); // Output to console: 145
+// Define an arrow function to add two numbers
+const addNumbers = () => {
+    // Use let instead of var for block-scoped variables
+    let a = 90; // First number
+    let b = 78; // Second number
+    const sum = a * b; // Calculate sum
+    console.log(sum); // Output to console: 145
     
-//     // Check if running in a browser environment before using document
-//     if (typeof document !== "undefined") {
-//         document.write(sum); // Write to HTML document: 145
-//     } else {
-//         console.log("document.write is not available in this environment (e.g., Node.js)");
-//     }
+    // Check if running in a browser environment before using document
+    if (typeof document !== "undefined") {
+        document.write(sum); // Write to HTML document: 145
+    } else {
+        console.log("document.write is not available in this environment (e.g., Node.js)");
+    }
     
-//     return sum; // Return the result for potential reuse
-// };
+    return sum; // Return the result for potential reuse
+};
 
-// // Invoke the function to execute it
-// addNumbers();
+// Invoke the function to execute it
+addNumbers();
 
 
 
@@ -215,3 +215,27 @@ const exampleBestPractice = (user = "Guest") => `Welcome, ${user}!`;
 console.log(exampleBestPractice("Frank")); // Output: Welcome, Frank!
 console.log(exampleBestPractice()); // Output: Welcome, Guest!
 
+
+
+
+
+
+// // ES7
+
+// const Add = (a,b) => console.log(a+b);
+
+// add(1,10)
+
+
+
+
+
+let name="jhon";
+
+function demo() {
+    let naame="shiva";
+    document.write("hello, my name is $(name)")
+}
+document.write("hello, my name is $(name)")
+
+demo()
