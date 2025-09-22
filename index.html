@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="functions.js"/>
+    
     <script>
-    var b = 90;
-    console.log(b);
+        function demo(){
+            document.getElementById("name").innerHTML = "HELLO HYDERABAD";
+        }
     </script>
 </head>
 <body>
-    
+    <h1 id="name">Hello world</h1>
+    <br>
+    <button onclick="demo()">change text</button>
 </body>
 </html>
